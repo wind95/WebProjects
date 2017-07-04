@@ -4,7 +4,7 @@ Node.js项目
 
 项目：Node.js_简单Node服务器搭建
 
-运行server.js 通过浏览器地址栏输入http://localhost:8080/地址访问Node服务器
+运行server.js 通过浏览器地址栏输入 http://localhost:8080/ 地址访问Node服务器
 服务器返回hello world给浏览器
 
 2017/6/25
@@ -28,4 +28,16 @@ Node.js项目
 
 fileOperation.js 
 实现了文件的读取操作 写入数据操作 文件复制 文件夹（包含子文件夹）复制等功能
+
+
+2017/7/04
+
+项目：Node.js_服务器客户端简单通信
+
+服务器：netServer.js 客户端：netSocket.js
+服务器或客户端控制台输入消息回车发送，客户端能接收到服务器发送的消息
+
+
+
+
 
