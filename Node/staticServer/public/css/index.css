@@ -1,0 +1,19 @@
+.frame{
+	display: inline-block;
+	height: 100px;
+	width: 300px;
+	border-radius: 50px; 
+	background-color: gray;
+	margin: 0 auto;
+}
+.span1{
+	vertical-align: top;
+}
+.span2{
+	vertical-align: top;
+}
+textarea{
+	height: 200px;
+	width: 450px;
+	background: #fbe2e2;
+}

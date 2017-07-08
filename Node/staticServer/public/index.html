@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+<body>
+	<h1>这是首页</h1>
+	<h3>Hello EveryOne</h3>
+	<div class="">
+		<textarea name="textarea" autofocus id="text1" oninput="onInput()" value="fujsif"></textarea>
+		<span class="span1">输入的内容为：</span>
+		<span class="span2" id="span2"></span>
+		<input type="file" name="upload">
+	</div>
+	<img src="./image/l2.png">
+</body>
+<script type="text/javascript">
+function onInput(){
+	var text = document.getElementById('text1').value;
+	document.getElementById('span2').innerHTML=text;
+}
+
+</script>
+</html>
