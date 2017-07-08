@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TOOL</title>
+	<link rel="stylesheet" type="text/css" href="common.css">
+	<style type="text/css">
+		.frame{
+			position: relative;
+			height: 100%;
+			width: 100%;
+			background: gray;
+			overflow: hidden;
+		}
+		.content{
+			width: 300px;
+			height: 57px;
+			position: absolute;
+			top: 80px;
+			right: -40px;
+			text-transform: uppercase;
+			border: rgba(255, 255, 255, 0.5) solid 3px;
+			box-sizing: content-box;
+			transform-origin: 100% 100%;
+			z-index: 22;
+		}
+		.content .top{
+			width: 100%;
+			height: 0;
+			left: 0;
+			bottom: 50%;
+			position: absolute;
+			background: white;
+			transform-origin: bottom;
+			transform: matrix(1,0,0,1,0,0);
+			transition: height .5s .3s;
+			z-index: 23;
+		}
+		.content .bottom{
+			width: 100%;
+			height: 0;
+			left: 0;
+			top: 50%;
+			position: absolute;
+			background: white;
+			transform-origin: top;
+			transform: matrix(1,0,0,1,0,0);
+			transition: height .5s .3s;
+			z-index: 23;
+		}
+		.content .line{
+			width: 0%;
+			height: 1px;
+			right: 0;
+			bottom: 28px;
+			position: absolute;
+			background: white;
+			transform-origin: left;
+			transform: matrix(1,0,0,1,0,0);
+			transition: width .3s;
+		}
+		.content .text{
+			position: absolute;
+			font-size: 20px;
+			top: 18px;
+			left: 28px;
+			color: white;
+			transition: color .5s .3s;
+			cursor: pointer;
+			z-index: 99;
+		}
+		.content:hover .top,.content:hover .bottom{
+			height: 50%;
+		}
+		.content:hover .line{
+			width: 100%;
+		}
+		.content:hover .text{
+			color: black;
+		}
+		.media{
+			position: absolute;
+			height: 100%;
+			width: 100%;
+			top: 0;
+			left: 0;
+		}
+		.media .splash{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			overflow: hidden;			
+		}
+		video{
+			margin-left: 0px;
+    		margin-top: -188px;
+		}
+	</style>
+</head>l
+<body>
+<div class="nav">
+		<ul>
+			<li>
+				<a href="tool.html">
+					<span>tool</span>
+					<span>tool</span>
+				</a>			
+			</li>
+			<li>
+				<a href="#">
+					<span>work</span>
+					<span>work</span>			
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span>vr/360</span>
+					<span>vr/360</span>
+				</a>
+			</li>
+			<li>
+				<a href="./director.html">
+					<span>directors</span>
+					<span>directors</span>
+				</a>
+			</li>
+			<li>
+				<a href="awards.html">
+					<span>awards</span>
+					<span>awards</span>
+				</a>
+			</li>
+			<li>
+				<a href="./about.html">
+					<span>about</span>
+					<span>about</span>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<span>contact</span>
+					<span>contact</span>
+				</a>
+			</li>
+		</ul>
+</div>
+<div class="frame">
+	<div class="content">
+		<div class="top"></div>
+		<div class="text">view reel</div>
+		<div class="line"></div>
+		<div class="bottom"></div>		
+	</div>
+	<div class="media">
+		<div class="splash">
+			<video src="2016trim.webm" loop autoplay id="myvideo"></video>
+			<script type="text/javascript">
+				var video = document.getElementById("myvideo");
+				video.muted = true;
+				video.height = (window.screen.availHeight+100);
+				video.width = (window.screen.availWidth);
+			</script>
+		</div>
+	</div>
+</div>
+</body>
+</html>
