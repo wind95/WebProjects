@@ -1,0 +1,94 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font: 12px/1.5 Arial;
+	color: #666;
+}
+.shopping_list{
+	margin: 0 auto;
+	width: 1190px;
+	height:293px;
+}
+.shopping_list .sl_ul{
+	list-style: none;
+	float: left;
+	overflow: hidden;
+}
+.shopping_list .sl_ul .slu_li{
+	float: left;
+	width: 236px;
+	height: 291px;
+	border: 1px solid #f60;
+	position: relative;
+}
+.shopping_list .sl_ul .slu_li .slu_dl{
+	width: 208px;
+	height: 263px;
+	z-index: 10;
+	padding: 10px;
+	border: 4px solid #ffe9c7;
+}
+.slu_li .slu_dl dt{
+	padding-bottom: 10px;
+}
+.slu_li .slu_dl dd{
+	display: inline-block;
+	width: 210px;
+	word-break: break-all;
+}
+.slu_li dd.gray{
+	display: inline-block;
+	height: 18px;
+	line-height: 17px;
+	overflow: hidden;
+	margin-top: 0;
+}
+.slu_li dd.u-time{
+	width: 203px;
+	height: 34px;
+	text-align: center;
+	line-height: 34px;
+	background-color: #f60;
+	font-size: 14px;
+	color: #fff;
+	margin-top: 4px;
+	padding-left: 5px;
+}
+.slu_dl .U_name{
+	height: 18px;
+	display: block;
+	overflow: hidden;
+	line-height: 18px;
+	margin-bottom: 3px;
+}
+.slu_dl .U_name a{
+	color: #333;
+	text-align: left;
+}
+.slu_dl .U_name a:hover{
+	color: #f60;
+	text-decoration: underline;
+}
+.slu_li .slu_dl img{
+	display: block;
+	width: 168px;
+	height: 168px;
+	margin: 0 auto;
+}
+.slu_dl a{
+	display: block;
+	color: #666;
+	text-decoration: none;
+}
+.slu_li .bg-png{
+	background-image: url("../image/shop_bg.png");
+	background-position: 0 0;
+	display: block;
+	height: 74px;
+	width: 74px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
